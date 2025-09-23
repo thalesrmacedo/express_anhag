@@ -1,11 +1,14 @@
 {
-  "name": "Node.js (Express)",
+  "name": "Node.js 18 (Express)",
   "image": "mcr.microsoft.com/devcontainers/node:18",
   "forwardPorts": [3000],
   "postCreateCommand": "npm install",
   "customizations": {
     "vscode": {
-      "extensions": ["ms-azuretools.vscode-docker", "dbaeumer.vscode-eslint"]
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "dbaeumer.vscode-eslint"
+      ]
     }
   }
 }
