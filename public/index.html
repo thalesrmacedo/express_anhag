@@ -1,29 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Calculadora Express</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <main class="card">
-    <h1>Calculadora (Express)</h1>
-    <div class="row">
-      <input id="a" type="number" placeholder="Número A">
-      <select id="op">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-        <option value="^">^ (potência)</option>
-      </select>
-      <input id="b" type="number" placeholder="Número B">
-    </div>
-    <button id="calc">Calcular</button>
-    <div id="output" class="output">Resultado: —</div>
-    <footer class="small">Rodando em Express • Feito para Codespaces</footer>
-  </main>
+  <div class="calculator">
+    <form id="calcForm">
+      <input type="text" id="expression" placeholder="Digite a expressão (ex: 2+3*4)" />
+      <button type="submit">Calcular</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+
   <script src="/script.js"></script>
 </body>
 </html>
